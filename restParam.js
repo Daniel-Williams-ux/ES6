@@ -29,5 +29,11 @@ console.log (sum(5, 6))
 function sum(...args) {
   return args.reduce((a, b) => a + b, 0);
 }
-console.log (sum(5, 6))
-  
+console.log (sum(5, 6))//11
+
+
+const map = (...args)  => {
+  return args.reduce((a, b) => a + b, 0)
+    
+}
+console.log(map(2, 3, 1, 2, 7))//15

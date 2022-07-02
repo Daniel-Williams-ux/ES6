@@ -38,3 +38,13 @@ const HIGH_TEMPERATURES = {
 };
 onst {today, tomorrow} = HIGH_TEMPERATURES
 console.log(today, tomorrow)//77 80
+
+
+let duck = {
+  name: "Aflac",
+  numLegs: 2,
+  sayName: function() {return "The name of this duck is " + duck.name + ".";}
+};
+//console.log(duck.sayName()); //The name of this duck is Aflac.
+const {sayName} = duck;
+console.log(sayName())//The name of this duck is Aflac

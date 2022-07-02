@@ -21,3 +21,20 @@ Here, the name and age variables will be created and assigned the values of thei
 
 You can extract as many or few values from the object as you want.
 */
+
+const info = {
+  name: 'Dave Joe',
+  age: 32
+}
+ const {name, age} = info;
+console.log(name, age)// Dave Joe 32
+
+
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+onst {today, tomorrow} = HIGH_TEMPERATURES
+console.log(today, tomorrow)//77 80

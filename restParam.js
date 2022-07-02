@@ -37,3 +37,18 @@ const map = (...args)  => {
     
 }
 console.log(map(2, 3, 1, 2, 7))//15
+
+//Note
+/*
+1. The rest parameter is used in functions as arguments
+2. It's the opposite of the spread operator in the sense that the spread operator spreads the arguments while the rest operator condenses it
+3.The rest operator is an array method
+*/
+
+function multiplier(num1, ...theArgs) {
+  return theArgs.map(function(element) {
+    return num1 * element;
+  })
+}
+console.log(multiplier(2, 2,3,4)) //[4, 6, 8]
+//num1 = 2 & ...theArgs = 2,3,4
